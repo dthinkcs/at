@@ -11,14 +11,20 @@ public class MainActivity extends AppCompatActivity {
     WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         webView = findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://thegoodlife-worldwide.herokuapp.com");
+        //webView.loadUrl("https://dthinkcs.github.io/mathgarden");
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+
+
+
+
     }
 
     @Override
